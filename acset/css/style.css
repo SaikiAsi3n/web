@@ -1,0 +1,158 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#header{
+    height: 60px;
+    background-image: url('../img/profile1.png');
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    
+}
+#header_nav, .header_subnav{    
+   list-style-type: none;
+}
+#header_nav > li {
+    display: inline-block;
+}
+
+#header_nav li {
+    position: relative;
+    
+}
+#header_nav > li > a{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 60px;
+    font-weight: 900;
+    padding: auto;
+    margin: auto;
+    
+}
+
+#header_nav li a{
+    line-height: 46px;
+    padding: 0 50px;
+    text-decoration: none;
+    text-transform: capitalize;
+    display: block;
+}
+
+#header_nav .header_subnav li:hover a,
+#header_nav > li:hover > a{
+   
+   color: #66FF33;
+}
+
+#header_nav li:hover .header_subnav{
+    display: block;
+}
+#header_nav .header_subnav {
+    display: none;
+    min-width: 160px;
+    position: absolute;
+    background-image: url('../img/profile1.png');
+    
+}
+#header_nav .header_subnav a{
+    color: white;
+    padding: auto;
+    line-height: 38px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+}
+#header_nav .down-icon{
+    font-size: 25px;
+    padding: 12px 4px;
+    left: 50;
+}
+
+
+#main {
+    position: relative;
+    margin-top: 40px;
+    padding-top: 50%;
+    background: url(../img/profile2.png);
+    background-repeat: no-repeat;
+    
+}
+.slider_nav {
+    display: flex;
+    position: absolute;
+    top: 0;
+}
+
+.slider_nav-avatar {
+    margin: 50px 0px 0px 50px;
+    width: 400px;
+    height: 400px;
+    border-radius: 50% ;
+    
+}
+
+ .slider_nav-gree {
+    color: 	#EEEEEE;
+    margin: 40px 0 0 200px;
+    
+} 
+
+
+.slider_nav-gree-1 {
+    color: while;
+    font-size: 30pt;
+    text-shadow: 5px 8px 2px orange;
+    font-weight: bold;
+    font-size: 80px;
+    margin: 80px 0 0 0;
+}
+
+.slider_nav-gree-2 {   
+    font-size: 30px;
+    margin: 70px 0px 300px 100px;   
+}
+
+
+.slider_infomation table,th,td{
+    width: 30%;
+    font-family: Georgia;
+    color: white;
+    font-size: large;
+    padding: 8px;
+    border: 2px solid white;
+    border-collapse: collapse;
+    font-weight: bold;
+}
+
+#footer {
+    margin: 170px 0 0 0;
+    height: 46px;
+    width: 100%;
+    background-image: url(../img/profile1.png);
+    color: white;
+}
+
+.footer_end{
+    color: #FFFF66;
+    size: 50px;
+    text-align: center;
+    line-height: 46px;
+    
+}
+
+.footer_end-link{
+    color: #FFCC00;
+    size: 50px;
+    text-align: center;
+    line-height: 46px;
+    
+}
