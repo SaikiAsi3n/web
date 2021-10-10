@@ -9,8 +9,8 @@ html{
 }
 
 
-#header{
-    height: 60px;
+.header{
+    width: 10000px;
     background-image: url('../img/profile1.png');
     position: fixed;
     top:0;
@@ -34,10 +34,9 @@ html{
     color: white;
     font-family: 'Courier New', Courier, monospace;
     font-size: 60px;
-    font-weight: 900;
-    padding: auto;
-    margin: auto;
-    
+    font-weight: 700;   
+    margin-left: 0;
+    overflow  : visible;
 }
 
 #header_nav li a{
@@ -50,8 +49,10 @@ html{
 
 #header_nav .header_subnav li:hover a,
 #header_nav > li:hover > a{
-   
    color: #66FF33;
+   transition: ease-in 0.35s;
+   -moz-transition: ease-in 0.35s;
+   -webkit-transition: ease-in 0.35s;
 }
 
 #header_nav li:hover .header_subnav{
@@ -61,14 +62,14 @@ html{
     display: none;
     min-width: 160px;
     position: absolute;
-    background-image: url('../img/profile1.png');
-    
+    /* background-image: url('../img/profile2.png'); */
+    left: 90px;
 }
 #header_nav .header_subnav a{
     color: white;
     padding: auto;
     line-height: 38px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 900;
 }
 #header_nav .down-icon{
@@ -83,7 +84,8 @@ html{
     margin-top: 40px;
     padding-top: 50%;
     background: url(../img/profile2.png);
-    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     
 }
 .slider_nav {
@@ -112,20 +114,26 @@ html{
     font-size: 30pt;
     text-shadow: 5px 8px 2px orange;
     font-weight: bold;
-    font-size: 80px;
-    margin: 80px 0 0 0;
+    font-size: 70px;
+    margin: 80px 10px 0 0;
 }
 
 .slider_nav-gree-2 {   
     font-size: 30px;
-    margin: 70px 0px 300px 100px;   
+    margin: 70px 0px 320px 100px;  
+    color: #FFFFCC; 
 }
 
+.slider_infomation th{
+    text-align: center;
+    font-size: x-large;
+}
 
 .slider_infomation table,th,td{
-    width: 30%;
-    font-family: Georgia;
-    color: white;
+    width: 500px;
+    height: 80px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #FFFFCC;
     font-size: large;
     padding: 8px;
     border: 2px solid white;
@@ -133,26 +141,103 @@ html{
     font-weight: bold;
 }
 
-#footer {
-    margin: 170px 0 0 0;
-    height: 46px;
-    width: 100%;
-    background-image: url(../img/profile1.png);
+
+.slider_nav1-talent{
     color: white;
+    margin: 700px 0 0 300px;
+    text-shadow: 5px 8px 2px orange;
+    font-size: 100px;
 }
 
-.footer_end{
-    color: #FFFF66;
-    size: 50px;
-    text-align: center;
-    line-height: 46px;
+.slider_nav1-info{
+    
+    margin: 50px 0px 50px 500px;
+    color: #FFFFCC;
+    font-size: 45px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.slider_nav1-infox{
+    
+    margin: 0px 0px 0px 500px;
+    color: #FFFFCC;
+    font-size: 45px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     
 }
 
-.footer_end-link{
-    color: #FFCC00;
-    size: 50px;
-    text-align: center;
-    line-height: 46px;
+.slider_nav2-shop{
+    color: white;
+    margin: 300px 0 0 50px;
+    text-shadow: 5px 8px 2px orange;
+    font-size: 100px;
+}
+
+.slider_nav2-info1{
+    color: white;
+    margin: 30px 0 0 150px;    
+    font-size: 30px;
     
 }
+
+.slider_nav2-info2{
+    color: white;
+    margin: 10px 0 0 150px;   
+    font-size: 30px;
+    border:2px solid pink;
+    border-width: 5px;
+    width: 700px;   
+}
+
+.slider_nav2-info3:link{
+    color:white;
+}
+
+
+.slider_nav2-info3:visited{
+    color: white; 
+    text-decoration: none;
+}
+
+.slider_nav2-info3:hover{
+    color: #66FF33;
+   transition: ease-in 0.35s;
+   -moz-transition: ease-in 0.35s;
+   -webkit-transition: ease-in 0.35s;
+}
+
+.slider_nav3-contact{
+    color: white;
+    margin: 350px 0 0 50px;
+    text-shadow: 5px 8px 2px orange;
+    font-size: 100px;
+    
+}
+
+.slider_nav3-info{
+    color: #FFFFCC;;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 50px;
+    border: 2px solid pink;
+    border-width: 3px;
+    width: 800px;
+}
+
+.slider_nav-infox:link{
+    color:white;
+
+}
+
+.slider_nav3-infox:visited{
+    color: white;
+    text-decoration: none;
+}
+
+.slider_nav3-infox:hover{
+    color:#66FF33;
+    transition: ease-in 0.35s;
+    -moz-transition: ease-in 0.35s;
+    -webkit-transition: ease-in 0.35s;
+}
+
+
